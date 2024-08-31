@@ -63,3 +63,4 @@ The successful application of YOLOv8 and CNN or other models, in this research d
 
 
 License
+[ CCO ]
