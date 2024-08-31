@@ -30,15 +30,20 @@ We employed the YOLOv8 (You Only Look Once version 8) object detection model, re
  Resizing images to a uniform size, normalizing pixel values, and augmenting the data through techniques such as rotation, flipping, and zooming to enhance the model's ability to generalize is what which is known as data preprocessing. These steps were essential to ensure that the models could handle variations in image quality and lesion appearance. Here, images are resized to 256*256 pixels.
 
 **Model Used**
-1. YOLOv8: YOLOv8 is an advanced object detection model known for its speed and accuracy. It uses a single neural network to predict bounding boxes and class probabilities, making it suitable for real-time detection tasks. For this study, we adapted YOLOv8 for binary classification of skin lesions.
+YOLOv8: YOLOv8 is an advanced object detection model known for its speed and accuracy. It uses a single neural network to predict bounding boxes and class probabilities, making it suitable for real-time detection tasks. For this study, we adapted YOLOv8 for binary classification of skin lesions.
 
 **Evaluation Metrics**
 The dataset was divided into train, validation and test data. After training and validating model they are evaluated on the test data.
 The models were evaluated using the following metrics:
+
 •	Accuracy: The percentage of correctly classified images.
+
 •	Precision: The proportion of positive identifications that were actually correct.
+
 •	Recall: The proportion of actual positives that were identified correctly.
-•	F1 Score: The harmonic mean of precision and recall, providing a balance between the two.
+
+•	F1 Score: The harmonic mean of precision and recall, providing a balance between the two
+
 •	Support: The number of instances in each class.
 
 **Quantitative Results**
