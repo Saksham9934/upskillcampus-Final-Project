@@ -1,66 +1,209 @@
-# upskillcampus-Final-Project
+🚀 Skin Cancer Detection and Classification using YOLOv8
+AI-Powered Medical Image Analysis using Deep Learning
+<p align="center"> <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python"/> <img src="https://img.shields.io/badge/YOLOv8-Ultralytics-red?style=for-the-badge"/> <img src="https://img.shields.io/badge/PyTorch-Deep%20Learning-orange?style=for-the-badge&logo=pytorch"/> <img src="https://img.shields.io/badge/Dataset-ISIC%202020-success?style=for-the-badge"/> <img src="https://img.shields.io/github/license/Saksham9934/upskillcampus-Final-Project?style=for-the-badge"/> <img src="https://img.shields.io/github/stars/Saksham9934/upskillcampus-Final-Project?style=for-the-badge"/> <img src="https://img.shields.io/github/forks/Saksham9934/upskillcampus-Final-Project?style=for-the-badge"/> </p>
+📖 Project Overview
 
-**Skin Cancer Detection and Classification using YOLOv8 Model**
+Skin cancer is among the most common forms of cancer worldwide. Early diagnosis plays a vital role in improving survival rates and reducing treatment complexity.
 
-**Project Overview**
+This project presents an AI-powered Skin Cancer Detection and Classification System developed using the YOLOv8 deep learning model. The system analyzes dermoscopic images from the ISIC 2020 dataset and accurately classifies skin lesions as Benign or Malignant.
 
-This project leverages the power of deep learning to detect and classify skin cancer using the state-of-the-art YOLOv8 model. Skin cancer is a growing concern worldwide, and early detection is crucial for effective treatment. Our project aims to develop an AI-powered tool that assists dermatologists in identifying skin cancer lesions from images, promoting timely interventions and improving patient outcomes.Skin cancer detection is a critical task in medical diagnostics, as early identification can significantly improve patient outcomes. In this study, we have take out the performance of advanced deep learning models—YOLOv8(You only look once) for the classification of skin lesions into benign and malignant categories using the ISIC 2020 dataset. YOLOv8 achieved an accuracy of 98.5%, with a precision of 0.98, recall of 1.00, and an F1 score of 0.99.
+The model achieves excellent performance while maintaining high inference speed, making it suitable for future real-time clinical applications.
 
-**Methodology**
-We employed the YOLOv8 (You Only Look Once version 8) object detection model, renowned for its accuracy and speed. Our dataset consists of images of various skin lesions, annotated with their respective classes (benign or malignant). The model was trained on this dataset, enabling it to learn features and patterns characteristic of skin cancer.
+🎯 Objectives
+Detect skin cancer lesions automatically
+Classify lesions into Benign and Malignant
+Assist dermatologists with AI-based diagnosis
+Improve early detection accuracy
+Reduce manual diagnostic effort
+✨ Features
+🧠 Deep Learning Based Detection
+⚡ Real-Time Prediction
+🎯 High Classification Accuracy
+🏥 Medical Image Analysis
+📊 Performance Evaluation
+📈 Training Visualization
+🔍 Binary Classification
+📱 Scalable for Clinical Applications
+🛠 Tech Stack
+Category	Technology
+Language	Python
+Framework	PyTorch
+Model	YOLOv8
+Dataset	ISIC 2020
+Notebook	Jupyter Notebook
+Visualization	Matplotlib
+Data Processing	NumPy, Pandas
+Deployment Ready	Google Colab / Local
+🧬 Dataset
+ISIC 2020 Challenge Dataset
 
-**Key Features**
-- Real-time detection: Our model can detect skin cancer lesions in real-time, making it suitable for clinical applications.
-- High accuracy: YOLOv8's advanced architecture ensures precise detection and classification of skin cancer lesions.
-- Multi-class classification: Our model can classify lesions into different types of skin cancer, providing valuable insights for diagnosis and treatment.
+The project uses the International Skin Imaging Collaboration (ISIC 2020) dataset.
 
-**Technical Details**
-- Model: YOLOv8
-- Framework: PyTorch
-- Dataset: [The ISIC 2020 challenge dataset, a large collection of dermoscopic images labelled as benign or malignant, was used in this study. The dataset comprises thousands of images from multiple sources, annotated by dermatology experts. For our analysis, we used 23,126 images which comprised of two categories benign and malignant. Dataset also had a csv file containing various information of patient and whether the lesion is malignant or benign which further helped in better evaluation of model. ]
-- Training parameters: [ models were trained using the ISIC 2020 dataset over 20 epochs, with a learning rate of 0.001 and a batch size of 32.. ]
+Dataset Statistics
+Item	Value
+Images	23,126
+Classes	2
+Benign	✓
+Malignant	✓
+Image Size	256 × 256
+🔄 Workflow
+ISIC Dataset
+      │
+      ▼
+Data Cleaning
+      │
+      ▼
+Image Preprocessing
+      │
+      ▼
+Data Augmentation
+      │
+      ▼
+YOLOv8 Training
+      │
+      ▼
+Validation
+      │
+      ▼
+Testing
+      │
+      ▼
+Prediction
+      │
+      ▼
+Benign / Malignant
+🖼 Model Architecture
+Input Image
+      │
+      ▼
+Image Resize (256x256)
+      │
+      ▼
+YOLOv8 Backbone
+      │
+      ▼
+Feature Extraction
+      │
+      ▼
+Neck
+      │
+      ▼
+Detection Head
+      │
+      ▼
+Classification
+      │
+      ▼
+Benign / Malignant
+⚙ Data Preprocessing
+Image Resizing (256 × 256)
+Pixel Normalization
+Horizontal Flip
+Vertical Flip
+Rotation
+Zoom
+Data Augmentation
+🧠 Model
 
-**Usage**
-1. Clone the repository and install the required dependencies.
-2. Prepare your dataset and update the configuration files accordingly.
-3. Run the training script to fine-tune the YOLOv8 model on your dataset.
-4. Use the inference script to detect and classify skin cancer lesions in new images.
+YOLOv8
 
-**Data Preprocessing**
- Resizing images to a uniform size, normalizing pixel values, and augmenting the data through techniques such as rotation, flipping, and zooming to enhance the model's ability to generalize is what which is known as data preprocessing. These steps were essential to ensure that the models could handle variations in image quality and lesion appearance. Here, images are resized to 256*256 pixels.
+YOLOv8 (You Only Look Once Version 8) is a state-of-the-art object detection and classification model developed by Ultralytics.
 
-**Model Used**
-YOLOv8: YOLOv8 is an advanced object detection model known for its speed and accuracy. It uses a single neural network to predict bounding boxes and class probabilities, making it suitable for real-time detection tasks. For this study, we adapted YOLOv8 for binary classification of skin lesions.
+Advantages
+High Accuracy
+Faster Inference
+Lightweight
+Real-Time Detection
+Better Generalization
+⚙ Training Configuration
+Parameter	Value
+Epochs	20
+Batch Size	32
+Learning Rate	0.001
+Framework	PyTorch
+Optimizer	Adam
+📈 Model Performance
+Metric	Score
+Accuracy	98.5%
+Precision	0.98
+Recall	1.00
+F1 Score	0.99
+📊 Evaluation Metrics
+Accuracy
+Precision
+Recall
+F1 Score
+Support
+📂 Project Structure
+upskillcampus-Final-Project/
 
-**Evaluation Metrics**
-The dataset was divided into train, validation and test data. After training and validating model they are evaluated on the test data.
-The models were evaluated using the following metrics:
+│── Dataset/
+│── Training/
+│── Testing/
+│── Models/
+│── Results/
+│── notebooks/
+│── requirements.txt
+│── README.md
+🚀 Installation
+git clone https://github.com/Saksham9934/upskillcampus-Final-Project.git
+cd upskillcampus-Final-Project
+pip install -r requirements.txt
+▶ Run Project
+jupyter notebook
 
-•	Accuracy: The percentage of correctly classified images.
+or
 
-•	Precision: The proportion of positive identifications that were actually correct.
+python predict.py
+📷 Results
 
-•	Recall: The proportion of actual positives that were identified correctly.
+Add screenshots here.
 
-•	F1 Score: The harmonic mean of precision and recall, providing a balance between the two
+Examples:
 
-•	Support: The number of instances in each class.
+Dataset Samples
+Training Curve
+Confusion Matrix
+Accuracy Graph
+Prediction Output
+📌 Future Improvements
+Multi-Class Skin Cancer Detection
+Deploy using Flask
+Mobile Application
+Streamlit Dashboard
+Docker Deployment
+Cloud Inference API
+🤝 Contributing
 
-**Quantitative Results**
-YOLOv8: The YOLOv8 model achieved an accuracy of 98.5%, with a precision of 0.98, recall of 1.00, and an F1 score of 0.99. The support for malignant lesions was 6,507.
+Contributions are welcome.
 
-**Contributions**
+Fork the repository
+Create a new branch
+Commit your changes
+Push your branch
+Open a Pull Request
+🙌 Acknowledgements
+UpSkill Campus
+ISIC 2020 Challenge
+Ultralytics YOLOv8
+PyTorch Community
+Open Source Contributors
+📜 License
 
-We welcome contributions to improve the model's accuracy, expand the dataset, or enhance the user interface. Please submit your pull requests or issues to collaborate on this project.
+This project is licensed under the CC0 License.
 
-Conclusion
+👨‍💻 Author
+Saksham Jha
 
-**Summary**
-This study demonstrates the performance of YOLOv8 model in skin cancer classification using ISIC 2020 dataset. Compared to other models, YOLOv8 achieves higher accuracy, improvement and F1 score, making it suitable for instant, highprecision skin detection. The findings highlight the potential of deep learning models to improve diagnostic accuracy and patient outcomes.
+📧 Email: sakshamjha3027@gmail.com
 
-**Impact**
-The successful application of YOLOv8 and CNN or other models, in this research demonstrates the evolution of deep learning in diagnosis. By providing fast, accurate, and functional skin cancer diagnosis, these models can empower physicians, enabling earlier intervention and better patient care.
+🐙 GitHub: https://github.com/Saksham9934
 
+💼 LinkedIn: https://www.linkedin.com/in/saksham-jha-141623275/
 
-License
-[ CCO ]
+<div align="center">
+⭐ If you found this project useful, please consider giving it a Star!
+
+Made with ❤️ using Python • PyTorch • YOLOv8
+
+</div>
